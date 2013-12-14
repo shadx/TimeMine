@@ -1,0 +1,227 @@
+/* Верхняя панель - НАЧАЛО */
+.b-top_panel {
+  height: 55px;
+  background: url(../images/tpanel_shadow.png) no-repeat 50% 40px;
+}
+
+.b-tp_menu {
+  float: left;
+  margin-top: 12px;
+  margin-left: 365px;
+  overflow: hidden;
+}
+.b-tp_menu LI {
+  float: left;
+  padding-left: 8px;
+  font: 14px/16px arial;
+  color: #666666;
+}
+.b-tp_menu__main A {
+  display: block;
+  width: 16px;
+  height: 18px;
+  background: url(../images/ico_home.png) no-repeat 0 1px;
+  text-indent: -9999px;
+}
+.b-tp_menu A {
+  margin-left: 8px;
+  color: #666666;
+}
+
+.b-tp_socials {
+  float: right;
+  margin-top: 10px;
+  margin-right: 1px;
+  font: 14px/17px arial;
+  color: #666666;
+}
+.b-tp_socials SPAN {
+  display: block;
+  float: left;
+  margin-right: 4px;
+}
+.b-tp_socials__ico {
+  display: block;
+  float: left;
+  width: 17px;
+  height: 17px;
+  margin-left: 6px;
+  background-image: url(../images/ico_socials.png);
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+}
+.b-tp_socials__vk {
+  margin-left: 6px;
+  background-position: 0 0;
+}
+.b-tp_socials__fb {
+  background-position: -23px 0;
+}
+/* Верхняя панель - КОНЕЦ */
+
+
+
+/* Шапка - НАЧАЛО */
+.b-header {
+  height: 62px;
+}
+
+.b-logo {
+  float: left;
+  display: block;
+  width: 247px;
+  height: 45px;
+  background: url(../images/logo.png) no-repeat 0 0;
+  text-indent: -9999px;
+}
+
+.b-header__login {
+  float: right;
+  margin-top: 6px;
+  overflow: hidden;
+}
+.b-header__login P {
+  float: right;
+  margin: 1px 0 0 10px;
+  font: 12px/16px arial;
+  color: #666666;
+}
+.b-login_but {
+  float: left;
+  border: solid 1px #EB7500;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.b-login_but A {
+  float: left;
+  display: block;
+  height: 30px;
+  padding: 0 15px;
+  background: url(../images/bg_login_but.png) repeat-x 0 0 #FF8002;
+  border: solid 1px #FFBA40;
+  font: bold 15px/30px myriad_probold_semicondensed,arial;
+  color: white;
+  text-shadow: 0 0 2px #D57001;
+}
+.b-login_but A:hover {
+  background: url(../images/bg_login_but-over.png) repeat-x 0 0 #FFA302;
+  text-decoration: none;
+}
+
+.b-search {
+  float: left;
+  margin: 6px 0 0 31px;
+  border: solid 1px #CBCBC9;
+  border-radius: 3px;
+}
+.b-search FORM {
+  width: 397px;
+  height: 31px;
+  background: url(../images/bg_search-big.png) repeat-x 50% 50%;
+  border: solid 1px white;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.b-search INPUT[type="text"] {
+  margin-top: 7px;
+  margin-left: 16px;
+  width: 340px;
+  background: none;
+  border: none;
+  font: 14px arial;
+  color: black;
+}
+.b-search INPUT[type="submit"] {
+  float: right;
+  width: 20px;
+  height: 21px;
+  margin-top: 5px;
+  margin-right: 7px;
+  background: url(../images/ico_search.png) no-repeat 0 0;
+  border: none;
+  cursor: pointer;
+}
+
+/* Шапка - КОНЕЦ */
+
+
+
+/* Верхнее меню - НАЧАЛО */
+.b-top_menu {
+  height: 79px;
+  border-radius: 6px;
+  box-shadow: 0 1px 5px #ACACAC;
+}
+.b-top_menu__top_items {
+  height: 45px;
+  padding-left: 10px;
+  background: url(../images/bg_top_menu-blue.png) repeat-x 0 0;
+  border-radius: 6px 6px 0 0;
+  overflow: hidden;
+}
+.b-top_menu__top_items LI {
+  float: left;
+  padding: 5px 25px 0 25px;
+  background: url(../images/bg_top_menu-sep.png) repeat-y 100% 0;
+}
+.b-top_menu__top_items A {
+  font: bold 16px/35px arial;
+  color: white;
+}
+LI.b-top_menu__top_items__act {
+  position: relative;
+  z-index: 1;
+  margin-top: 5px;
+  padding-top: 1px;
+  padding-bottom: 4px;
+  background: url(../images/bg_top_menu-act.png) repeat-x 0 0;
+  border-radius: 6px 6px 0 0;
+}
+.b-top_menu__top_items__act A {
+  font-size: 15px;
+  color: #125E94;
+}
+.b-top_menu__left_cur {
+  position: absolute;
+  z-index: 2;
+  left: -5px;
+  bottom: 0;
+  width: 5px;
+  height: 6px;
+  background: url(../images/bg_top_menu_left_cur.png) no-repeat 0 0;
+}
+.b-top_menu__right_cur {
+  position: absolute;
+  z-index: 2;
+  right: -5px;
+  bottom: 0;
+  width: 5px;
+  height: 6px;
+  background: url(../images/bg_top_menu_right_cur.png) no-repeat 0 0;
+}
+
+.b-top_menu__brands {
+  height: 34px;
+  background: url(../images/bg_top_menu-brands.png) repeat-x 0 0 #F1F1F1;
+  overflow: hidden;
+  font: 12px arial;
+  color: #333333;
+}
+.b-top_menu__brands P,
+.b-top_menu__brands A {
+  float: left;
+  line-height: 34px;
+}
+.b-top_menu__brands P {
+  margin: 0 18px;
+  padding: 0;
+}
+.b-top_menu__brands A {
+  margin-right: 21px;
+  width: 10px;
+  color: #2E7DB5;
+}
+A.b-top_menu__brands__last {
+  margin-right: 0;
+}
+/* Верхнее меню - КОНЕЦ */
