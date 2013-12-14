@@ -149,6 +149,7 @@
 /* Верхнее меню - НАЧАЛО */
 .b-top_menu {
   height: 79px;
+  margin-bottom: 26px;
   border-radius: 6px;
   box-shadow: 0 1px 5px #ACACAC;
 }
