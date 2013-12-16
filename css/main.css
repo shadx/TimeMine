@@ -2,3 +2,178 @@
   width: 960px;
   margin: 0 auto;
 }
+
+
+
+.b-main-menu_slider {
+  
+}
+
+/* Слайдер на главной - НАЧАЛО */
+.b-slider_big {
+  float: right;
+  width: 780px;
+  height: 391px;
+  position: relative;
+  z-index: 50;
+}
+.b-slider_big .bx-prev {
+  width: 41px;
+  height: 93px;
+  background: url(../images/bslider-control_left.png) no-repeat 0 0;
+  position: absolute;
+  top: 149px;
+  left: -20px;
+  z-index: 90;
+  text-indent: -9999px;
+}
+.b-slider_big .bx-next {
+  width: 41px;
+  height: 93px;
+  background: url(../images/bslider-control_right.png) no-repeat 0 0;
+  position: absolute;
+  top: 149px;
+  right: -20px;
+  z-index: 90;
+  text-indent: -9999px;
+}
+/* Слайдер на главной - КОНЕЦ */
+
+
+
+/* Левое меню - НАЧАЛО */
+.b-menu_left {
+  width: 180px;
+  float: left;
+}
+.b-menu_left__items {
+  
+}
+.b-menu_left__items LI {
+  margin-bottom: 11px;
+  padding: 0 0 2px 13px;
+}
+.b-menu_left__last {
+  margin-bottom: 0 !important;
+}
+.b-menu_left__with_sub {
+  background: url(../images/arrow_leftmenu.png) no-repeat 0 5px;
+}
+.b-menu_left__items A {
+  display: block;
+  font: bold 14px/16px arial;
+  color: #2e7db5;
+}
+.b-menu_left__sub_items {
+  margin-top: 2px;
+  overflow: hidden;
+}
+.b-menu_left__sub_items LI {
+  margin: 0;
+  padding: 0;
+}
+.b-menu_left__sub_items A {
+  font: 12px/20px arial;
+  color: #333333;
+}
+/* Левое меню - КОНЕЦ */
+
+
+
+.b-content_main {
+  overflow: hidden;
+}
+
+
+
+/* Банеры на главной - НАЧАЛО */
+.b-banners_cont__ext {
+  margin-top: 27px;
+  overflow: hidden;
+}
+.b-banners_cont {
+  oveflow: hidden;
+}
+.b-banners_cont LI {
+  float: left;
+  margin-right: 13px;
+}
+.b-banners_cont IMG {
+  dispay: block;
+}
+.b-banners_cont .last {
+  margin-right: 0;
+}
+/* Банеры на главной - КОНЕЦ */
+
+
+
+/* Бренды на главной - НАЧАЛО */
+.b-brends_cont {
+  margin: 45px 0 0 0;
+  overflow: hidden;
+}
+.b-brends_cont UL {
+  overflow: hidden;
+}
+.b-brends_cont LI {
+  float: left;
+  margin: 0 50px 27px 0;
+}
+.b-brends_cont .last {
+  margin-right: 0;
+}
+/* Бренды на главной - КОНЕЦ */
+
+
+
+/* Подвал - НАЧАЛО */
+.b-footer {
+  height: 177px;
+  margin-top: 25px;
+  background: #f0f0f0;
+}
+.b-social_footer_ext {
+  height: 94px;
+  overflow: hidden;
+  background: url(../images/footer-line.png) no-repeat center bottom;
+  position: relative;
+  z-index: 1;
+}
+.b-social_footer {
+  overflow: hidden;
+  width: 152px;
+  position: absolute;
+  top: 37px;
+  left: 385px;
+  z-index: 2;
+}
+.b-social_footer LI {
+  float: left;
+  margin-right: 8px;
+}
+.b-social_footer LI.last {
+  margin-right: 0;
+}
+.b-social_footer LI A {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url(../images/social-footer.png) no-repeat 0 0;
+}
+.b-social_footer .b-social_footer__ok {
+  background-position: 0 -42px;
+}
+.b-social_footer .b-social_footer__fb {
+  background-position: 0 -84px;
+}
+.b-social_footer .b-social_footer__gp {
+  background-position: 0 -126px;
+}
+.b-copyright {
+  padding-top: 20px;
+  font: 14px/17px arial;
+  color: #666666;
+  text-align: center;
+}
+/* Подвал - КОНЕЦ */
