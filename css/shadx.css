@@ -369,7 +369,7 @@ A.b-top_menu__brands__last {
 .b-brands_full__liter {
   float: left;
   width: 85px;
-  font: bold 72px/72px myriad_probold,arial;
+  font: bold 72px/72px myriad_procondensed,arial;
   color: #333333;
 }
 .b-brands_full__list {
@@ -404,7 +404,7 @@ A.b-top_menu__brands__last {
 .b-blog_small__title {
   margin-left: 342px;
   margin-bottom: 9px;
-  font: bold 16px/20px arial;
+  font: bold 20px/20px myriad_procondensed,arial;
   color: #333333;
 }
 .b-blog_small__title A {
@@ -432,7 +432,7 @@ A.b-top_menu__brands__last {
 }
 .b-blog__title {
   margin-bottom: 14px;
-  font: bold 16px/20px arial;
+  font: bold 20px/20px myriad_procondensed,arial;
   color: #333333;
 }
 .b-blog__foto {
@@ -496,13 +496,13 @@ A.b-top_menu__brands__last {
 }
 .b-login_page__head {
   margin-bottom: 11px;
-  font: bold 16px/16px arial;
+  font: bold 20px/20px myriad_procondensed,arial;
   color: #333333;
   text-align: center;
 }
 .b-login_page__text {
   margin-bottom: 43px;
-  font: 16px arial;
+  font: 18px myriad_procondensed,arial;
   color: #333333;
   text-align: center;
 }
@@ -542,14 +542,14 @@ A.b-top_menu__brands__last {
   height: 41px;
   background: url(../images/bg_left_col-head.png) repeat-x 0 0;
   border-radius: 6px 6px 0 0;
-  font: bold 15px/37px arial;
+  font: bold 18px/37px myriad_procondensed,arial;
   color: #333333;
 }
 .b-cat_left_col__sub_head {
   margin: 13px 0;
   padding-left: 11px;
   background: url(../images/arrow_leftmenu.png) no-repeat 0 4px;
-  font: bold 14px/14px arial;
+  font: 18px/14px myriad_procondensed,arial;
   color: #333333;
 }
 .b-cat_left_col__cont {
@@ -650,7 +650,7 @@ A.b-cat_left_col__params__link:hover {
 
 .b-catalog_head {
   margin-bottom: 11px;
-  font: 18px/18px arial;
+  font: 20px/20px myriad_procondensed,arial;
   color: #333333;
 }
 
@@ -861,8 +861,8 @@ A.b-sort__act {
 
 /* Блок сортировки внизу - НАЧАЛО */
 .b-cat_sort__bottom {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 0px;
+  margin-bottom: 30px;
   padding: 4px 0px 4px 10px;
   background: #EFEFEF;
   border-radius: 2px;
@@ -993,17 +993,6 @@ A.b-sort__act {
 /* Ценовой диапазон - КОНЕЦ */
 
 /* Текстовый блок - НАЧАЛО */
-.b-text {
-  
-}
-.b-text H2 {
-  font: 22px myriad_probold_semicondensed,arial;
-  color: #333333;
-}
-.b-text H3 {
-  font: 18px myriad_probold_semicondensed,arial;
-  color: #333333;
-}
 .b-text P {
   font: 12px myriad_probold_semicondensed,arial;
   color: #333333;
@@ -1011,6 +1000,14 @@ A.b-sort__act {
 .b-text A {
   font: 12px myriad_probold_semicondensed,arial;
   color: #2E7DB5;
+}
+.b-text__link {
+  display: block;
+  margin-top: 20px;
+  text-decoration: underline;
+}
+.b-text__link:hover {
+  text-decoration: none;
 }
 .b-text UL {
   margin: 0px 0px 0px 10px;
