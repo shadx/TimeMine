@@ -23,3 +23,9 @@ $(document).ready(function(){
     }
   );
 });
+
+
+function goods_view_foto($foto)
+{
+  $("#goods__big_foto").attr("src",$foto);
+}

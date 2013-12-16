@@ -1,0 +1,34 @@
+div.star {
+	float: left;
+	width: 17px;
+	height: 15px;
+	text-indent: -999em;
+	cursor: pointer;
+	display: block;
+	background: transparent;
+	overflow: hidden
+}
+div.star, div.star a {
+	background: url('../images/star.gif') no-repeat 0 0px
+}
+div.star a {
+	display: block;
+	width: 16px;
+	height: 100%;
+	background-position: 0 0px;
+	border: 1 solid #FF0000
+}
+div.star_on a {
+	/* background-position: 0 -16px!important; */
+  background-position: 0 -32px
+}
+div.star_hover a, div.star_live a:hover {
+	background-position: 0 -32px
+}
+div.star_readonly a, div.star_readonly a:hover {
+	cursor: default !important
+}
+div.star {
+	background: transparent!important;
+	overflow: hidden!important
+}
