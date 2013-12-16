@@ -669,7 +669,7 @@ A.b-cat_left_col__params__link:hover {
   zoom: 1;
   *display: inline;
   /* float: left; */
-  width: 200px;
+  width: 199px;
   /* margni-bottom: 16px; */
   margin-bottom: 16px;
   padding: 9px 13px 12px 13px;
@@ -700,6 +700,20 @@ A.b-cat_left_col__params__link:hover {
   height: 25px;
   padding-right: 4px;
   background: url(../images/skidka_stick.png) no-repeat 0 0;
+  font-weight: bold;
+  color: white;
+  line-height: 25px;
+  text-align: right;
+}
+.b-goods_list__kupon {
+  position: absolute;
+  z-index: 2;
+  top: 15px;
+  right: 7px;
+  width: 45px;
+  height: 38px;
+  padding-right: 4px;
+  background: url(../images/kupon-stick.png) no-repeat 0 0;
   font-weight: bold;
   color: white;
   line-height: 25px;
@@ -843,4 +857,307 @@ A.b-sort__act {
 /* Блок сортировки - КОНЕЦ */
 
 
+
+
+/* Блок сортировки внизу - НАЧАЛО */
+.b-cat_sort__bottom {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 4px 0px 4px 10px;
+  background: #EFEFEF;
+  border-radius: 2px;
+  font: 12px/23px arial;
+  color: #333333;
+  overflow: hidden;
+}
+
+.b-cat_sort__bottom .b-sort {
+  float: right;
+  padding-top: 0px;
+  padding-right: 10px;
+  font: 12px arial;
+  color: #333333;
+  overflow: hidden;
+}
+.b-cat_sort__bottom .b-sort SELECT {
+  border: solid 1px #ABADB3;
+}
+.b-cat_sort__bottom .b-sort SPAN,
+.b-cat_sort__bottom .b-sort A {
+  float: none;
+  display: inline-block;
+  margin-right: 8px;
+}
+.b-cat_sort__bottom .b-sort A {
+  padding-right: 8px;
+  border-right: solid 1px #888888;
+  color: #2E7DB5;
+}
+.b-cat_sort__bottom A.b-sort__last {
+  border-right: none;
+}
+.b-cat_sort__bottom A.b-sort__act {
+  font-weight: bold;
+  color: #333333;
+}
+
+.b-cat_sort__bottom .b-sort__pager {
+  float: left;
+}
+.b-cat_sort__bottom .b-sort__pager A,
+.b-cat_sort__bottom .b-sort__pager SPAN,
+.b-cat_sort__bottom .b-sort__pager STRONG {
+  float: left;
+  display: block;
+}
+.b-cat_sort__bottom .b-sort__pager A {
+  margin-right: 13px;
+  color: #333333;
+  line-height: 25px;
+}
+.b-cat_sort__bottom .b-sort__pager SPAN {
+  margin-right: 13px;
+  line-height: 25px;
+}
+.b-cat_sort__bottom .b-sort__pager STRONG {
+  width: 23px;
+  margin-right: 8px;
+  background: white;
+  border: solid 1px #E4E4E4;
+  border-radius: 1px;
+  text-align: center;
+}
+.b-cat_sort__bottom .b-find_goods {
+  width: 150px;
+  text-align: center;
+  font: 12px/27px arial;
+  color: #333333;
+  margin: 0px auto;
+}
+
+/* Блок сортировки внизу - КОНЕЦ */
+
 /* Категория - КОНЕЦ */
+
+
+
+/* Ценовой диапазон - НАЧАЛО */
+
+.b-color_range {
+  overflow: hidden;
+}
+.b-color_range P {
+  font: bold 12px arial;
+  color: #333;
+}
+.b-color_range #slider-range {
+  margin: 5px 8px 0px 10px;
+  padding: 0px 25px;
+}
+
+#amount {
+  width: 50px;
+  margin: 8px 10px 0px 3px;
+  padding: 3px 5px;
+  border: solid 1px #fff;
+  border-radius: 4px;
+  box-shadow: 0px 0px 1px 1px #CBCBC9;
+  background: #FDFDFD;
+  font: bold 12px arial;
+  color: #333;
+}
+#amount2 {
+  width: 50px;
+  margin: 8px 5px 0px 10px;
+  padding: 3px 5px;
+  border: solid 1px #fff;
+  border-radius: 4px;
+  box-shadow: 0px 0px 1px 1px #CBCBC9;
+  background: #FDFDFD;
+  font: bold 12px arial;
+  color: #333;
+}
+
+.b-color_range .b-button {
+  margin: 5px 0px 3px 0px;
+}
+.b-color_range .b-button INPUT[type="button"],
+.b-color_range .b-button INPUT[type="submit"],
+.b-color_range .b-button BUTTON,
+.b-color_range .b-button A {
+  padding: 0px 20px;
+  height: 23px;
+  font: bold 12px/18px myriad_probold_semicondensed,arial;
+}
+
+/* Ценовой диапазон - КОНЕЦ */
+
+/* Текстовый блок - НАЧАЛО */
+.b-text {
+  
+}
+.b-text H2 {
+  font: 22px myriad_probold_semicondensed,arial;
+  color: #333333;
+}
+.b-text H3 {
+  font: 18px myriad_probold_semicondensed,arial;
+  color: #333333;
+}
+.b-text P {
+  font: 12px myriad_probold_semicondensed,arial;
+  color: #333333;
+}
+.b-text A {
+  font: 12px myriad_probold_semicondensed,arial;
+  color: #2E7DB5;
+}
+.b-text UL {
+  margin: 0px 0px 0px 10px;
+}
+.b-text UL LI {
+  font: 12px myriad_probold_semicondensed,arial;
+  color: #333333;
+}
+.b-text UL LI A {
+  font: 12px myriad_probold_semicondensed,arial;
+  color: #2E7DB5;
+}
+/* Текстовый блок - КОНЕЦ */
+
+/* Кнопка - НАЧАЛО */
+.b-button {
+  float: left;
+  border: solid 1px #EB7500;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.b-button INPUT[type="button"],
+.b-button INPUT[type="submit"],
+.b-button BUTTON,
+.b-button A {
+  float: left;
+  display: block;
+  height: 30px;
+  padding: 0px 15px;
+  margin: 0px;
+  background: url(../images/bg_login_but.png) repeat-x 0 0 #FF8002;
+  border: solid 1px #FFBA40;
+  font: bold 15px/30px myriad_probold_semicondensed,arial;
+  color: white;
+  text-shadow: 0 0 2px #D57001;
+}
+.b-button INPUT[type="button"]:hover,
+.b-button INPUT[type="submit"]:hover,
+.b-button BUTTON:hover,
+.b-button A:hover {
+  background: url(../images/bg_login_but-over.png) repeat-x 0 0 #FFA302;
+  text-decoration: none;
+}
+.b-button.b-button__blue {
+  border: solid 1px #1D52A0;
+}
+.b-button.b-button__blue INPUT[type="button"],
+.b-button.b-button__blue INPUT[type="submit"],
+.b-button.b-button__blue BUTTON,
+.b-button.b-button__blue A {
+  background: url(../images/button__blue-n.png) repeat-x 0 0 #FF8002;
+  border: solid 1px #4880C2;
+  color: white;
+}
+.b-button.b-button__blue INPUT[type="button"]:hover,
+.b-button.b-button__blue INPUT[type="submit"]:hover,
+.b-button.b-button__blue BUTTON:hover,
+.b-button.b-button__blue A:hover {
+  background: url(../images/button__blue-h.png) repeat-x 0 0 #FFA302;
+}
+/* Кнопка - КОНЕЦ */
+
+
+
+/* Mодалки - НАЧАЛО */
+
+.b-modal_wp {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0,0,0,0.5);
+  /* display: none; */
+}
+.b-modal {
+  margin: 100px auto;
+  border-radius: 10px;
+  background: white;
+  overflow: hidden;
+}
+.modal_close {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 13px;
+  right: 15px;
+  cursor: pointer;
+  background: url(../images/close_white.png) no-repeat 0px 0px;
+}
+.b-modal_head {
+  height: 42px;
+  text-align: center;
+  position: relative;
+  font: bold 22px/42px arial;
+  color: #fff;
+  box-shadow: 0px 1px 4px 0px #B9B9B9;
+  background: url(../images/bg_top_menu-blue.png) repeat-x 0px 0px;
+}
+
+/* Модалка быстрого просмотра - НАЧАЛО */
+
+/* Модалка быстрого просмотра - КОНЕЦ */
+
+/* Модалка выбора брендов - НАЧАЛО */
+.b-modal.b-modal__selbrand {
+  width: 830px;
+}
+.b-modal.b-modal__selbrand .b-top_menu__brands {
+  padding: 0px 22px;
+  box-shadow: 0px 1px 4px 0px #BFBFBF;
+  margin-bottom: 10px;
+}
+.b-selected_brands {
+  float: right;
+  width: 200px;
+}
+.b-selected_brands-inner {
+  border-radius: 4px;
+  margin: 10px 20px 0px 0px;
+  box-shadow: inset 0px 1px 5px 0px #BEBEBE;
+}
+.b-checkbox_brands-head {
+  font: 18px/47px myriad_procondensed;
+  color: #333333;
+  width: 364px;
+  overflow: hidden;
+  margin: 0px 0px 0px 67px;
+}
+.b-checkbox_brands-head .b-search {
+  float: right;
+  width: 220px;
+}
+.b-checkbox_brands-head .b-search FORM {
+  width: auto;
+}
+.b-checkbox_brands-head .b-search INPUT[type="text"] {
+  width: 170px;
+  float: left;
+}
+.b-checkbox_brands-head .b-search INPUT[type="submit"] {
+  float: right;
+}
+.b-checkbox_brands .b-cat_left_col__check_list {
+  float: left;
+}
+/* Модалка выбора брендов - КОНЕЦ */
+
+/* Mодалки - КОНЕЦ */
+
