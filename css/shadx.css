@@ -1180,6 +1180,32 @@ A.b-sort__act {
 .b-checkbox_brands .b-cat_left_col__check_list .b-cat_left_col__check_row LABEL {
   margin-left: 10px;
 }
+.b-modal_footer {
+  background: #EFEFEF;
+  height: 45px;
+  overflow: hidden;
+}
+.b-modal__selbrand .b-cat_sort {
+  margin: 4px 0px 0px 12px;
+}
+.b-modal__selbrand .b-sort__pager {
+  float: left;
+  margin-top: 3px;
+}
+.b-modal__selbrand .b-button {
+  float: right;
+  margin-top: 4px;
+  margin-right: 25px;
+  height: 24px;
+}
+.b-modal__selbrand .b-button INPUT[type="submit"],
+.b-modal__selbrand .b-button INPUT[type="button"],
+.b-modal__selbrand .b-button BUTTON,
+.b-modal__selbrand .b-button A {
+  height: 24px;
+  padding: 0px 20px;
+  font: bold 12px/10px myriad_probold_semicondensed,arial;
+}
 /* Модалка выбора брендов - КОНЕЦ */
 
 /* Mодалки - КОНЕЦ */

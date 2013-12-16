@@ -16,11 +16,11 @@
 </head>
 <body>
   
-  <div class="b-modal_wp" style="display: none;">
+  <div class="b-modal_wp">
     <div class="b-modal b-modal__selbrand">
       <div class="b-modal_head">
         Выбор
-        <div class="modal_close"></div>
+        <div class="modal_close" onclick="$(this).parents('.b-modal_wp').hide();"></div>
       </div>
       
       <div class="b-modal_inner">
@@ -55,7 +55,9 @@
         <div class="b-selected_brands">
           <div class="b-selected_brands-head">Выбраные</div>
           <div class="b-selected_brands-inner">
-            
+            <a href="#">2 Men</a>
+            <a href="#">Adidas</a>
+            <a href="#">Baon</a>
           </div>
         </div>
         
@@ -329,19 +331,22 @@
           </div>
         </div>
       </div>
-      <div style="background: #EFEFEF; height: 30px;">
-        
-        <div class="b-sort__pager">
-          <strong>1</strong>
-          <a href="#">2</a>
-          <a href="#">3</a>
-          <a href="#">4</a>
-          <a href="#">5</a>
-          <span>...</span>
-          <a href="#">></a>
-          <a href="#">>></a>
+      <div class="b-modal_footer">
+        <div class="b-cat_sort">
+          <div class="b-button b-button__blue">
+            <input type="button" value="Применить" />
+          </div>
+          <div class="b-sort__pager">
+            <strong>1</strong>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <span>...</span>
+            <a href="#">></a>
+            <a href="#">>></a>
+          </div>
         </div>
-        
       </div>
     </div>
   </div>
