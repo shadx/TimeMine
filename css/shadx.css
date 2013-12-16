@@ -1061,7 +1061,7 @@ A.b-sort__act {
 .b-button.b-button__blue INPUT[type="submit"],
 .b-button.b-button__blue BUTTON,
 .b-button.b-button__blue A {
-  background: url(../images/button__blue-n.png) repeat-x 0 0 #FF8002;
+  background: url(../images/button__blue-n.png) repeat-x 0 0 #1E4E9B;
   border: solid 1px #4880C2;
   color: white;
 }
@@ -1069,7 +1069,7 @@ A.b-sort__act {
 .b-button.b-button__blue INPUT[type="submit"]:hover,
 .b-button.b-button__blue BUTTON:hover,
 .b-button.b-button__blue A:hover {
-  background: url(../images/button__blue-h.png) repeat-x 0 0 #FFA302;
+  background: url(../images/button__blue-h.png) repeat-x 0 0 #1E4E9B;
 }
 /* Кнопка - КОНЕЦ */
 
@@ -1088,7 +1088,7 @@ A.b-sort__act {
 }
 .b-modal {
   margin: 100px auto;
-  border-radius: 10px;
+  border-radius: 5px;
   background: white;
   overflow: hidden;
 }
@@ -1096,8 +1096,8 @@ A.b-sort__act {
   width: 18px;
   height: 18px;
   position: absolute;
-  top: 13px;
-  right: 15px;
+  top: 12px;
+  right: 13px;
   cursor: pointer;
   background: url(../images/close_white.png) no-repeat 0px 0px;
 }
@@ -1105,44 +1105,58 @@ A.b-sort__act {
   height: 42px;
   text-align: center;
   position: relative;
-  font: bold 22px/42px arial;
+  font: bold 22px/42px myriad_procondensed, arial;;
   color: #fff;
   box-shadow: 0px 1px 4px 0px #B9B9B9;
   background: url(../images/bg_top_menu-blue.png) repeat-x 0px 0px;
 }
-
+.b-modal_inner {
+  overflow: hidden;
+}
 /* Модалка быстрого просмотра - НАЧАЛО */
 
 /* Модалка быстрого просмотра - КОНЕЦ */
 
 /* Модалка выбора брендов - НАЧАЛО */
 .b-modal.b-modal__selbrand {
-  width: 830px;
+  margin-top: 255px;
+  width: 730px;
 }
 .b-modal.b-modal__selbrand .b-top_menu__brands {
-  padding: 0px 22px;
   box-shadow: 0px 1px 4px 0px #BFBFBF;
   margin-bottom: 10px;
+  /* width: 650px; */
+  text-align: center;
+}
+.b-modal.b-modal__selbrand .b-top_menu__brands A {
+  float: none;
+  margin-right: 13px;
 }
 .b-selected_brands {
   float: right;
-  width: 200px;
+  width: 194px;
+}
+.b-selected_brands-head {
+  font: 18px/47px myriad_procondensed, arial;
+  color: #333333;
 }
 .b-selected_brands-inner {
   border-radius: 4px;
-  margin: 10px 20px 0px 0px;
+  margin: -6px 25px 20px 0px;
+  min-height: 354px;
   box-shadow: inset 0px 1px 5px 0px #BEBEBE;
 }
 .b-checkbox_brands-head {
-  font: 18px/47px myriad_procondensed;
+  font: 18px/47px myriad_procondensed, arial;
   color: #333333;
-  width: 364px;
+  width: 355px;
   overflow: hidden;
   margin: 0px 0px 0px 67px;
 }
 .b-checkbox_brands-head .b-search {
   float: right;
-  width: 220px;
+  width: 230px;
+  margin: 7px 0px 0px 0px;
 }
 .b-checkbox_brands-head .b-search FORM {
   width: auto;
@@ -1156,6 +1170,18 @@ A.b-sort__act {
 }
 .b-checkbox_brands .b-cat_left_col__check_list {
   float: left;
+  width: 156px;
+  margin-top: 14px;
+  margin-left: 24px;
+}
+.b-checkbox_brands .b-cat_left_col__check_list.last {
+  float: left;
+  width: 135px;
+  margin-top: 14px;
+  margin-left: 24px;
+}
+.b-checkbox_brands .b-cat_left_col__check_list .b-cat_left_col__check_row LABEL {
+  margin-left: 10px;
 }
 /* Модалка выбора брендов - КОНЕЦ */
 
