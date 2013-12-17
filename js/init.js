@@ -5,6 +5,19 @@ $(document).ready(function(){
     captions: false
   });
   
+  $('.b-modal__fastview .b-goods_list').bxSlider({
+    pager: false,
+    captions: false,
+    minSlides: 3,
+		maxSlides: 3,
+		moveSlides: 2,
+		slideWidth: 230,
+    nextSelector: '#fastview_slider_next',
+    prevSelector: '#fastview_slider_prev',
+    nextText: '',
+    prevText: ''
+  });
+  
   // $(".b-top_menu__top_items .b-top_menu__top_items__act").prevAll("LI").css("background","none");
   // $(".b-top_menu__top_items .b-top_menu__top_items__act").prev("LI").css("background","none");
   

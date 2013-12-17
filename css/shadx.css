@@ -1076,11 +1076,14 @@ A.b-sort__act {
 
 .b-modal_wp {
   position: fixed;
+  top: 0px;
+  left: 0px;
   z-index: 100;
   width: 100%;
   height: 100%;
   overflow: auto;
   background: rgba(0,0,0,0.5);
+  background: url(../images/modal_wrap-bg.png) repeat 0px 0px;
   /* display: none; */
 }
 .b-modal {
@@ -1102,7 +1105,7 @@ A.b-sort__act {
   height: 42px;
   text-align: center;
   position: relative;
-  font: bold 22px/42px myriad_procondensed, arial;;
+  font: bold 22px/42px myriad_procondensed, arial;
   color: #fff;
   box-shadow: 0px 1px 4px 0px #B9B9B9;
   background: url(../images/bg_top_menu-blue.png) repeat-x 0px 0px;
@@ -1110,9 +1113,95 @@ A.b-sort__act {
 .b-modal_inner {
   overflow: hidden;
 }
+
+
+
 /* Модалка быстрого просмотра - НАЧАЛО */
 
+.b-modal__fastview {
+  width: 730px;
+  margin-top: 255px;
+  position: relative;
+  overflow: visible;
+}
+.b-modal__fastview .modal_close {
+  width: 18px;
+  height: 18px;
+  background: url(../images/close_gray-big.png) no-repeat 0px 0px;
+}
+.add2favorit {
+  display: inline-block;
+  margin: 23px 0px 0px 47px;
+  padding: 0px 0px 0px 27px;
+  font: 18px myriad_procondensed, arial;
+  color: #225BA8;
+  background: url(../images/ico_heart.png) no-repeat 3px 3px;
+}
+.b-modal__fastview .b-goods__big_foto {
+  
+}
+.b-modal__fastview .b-goods__left_col {
+  width: auto;
+  padding: 12px 0px 0px 8px;
+  margin-bottom: 8px;
+}
+.b-modal__fastview .b-goods__right_col {
+  margin-top: 44px;
+  margin-left: 220px;
+}
+.b-modal__fastview .b-goods__har_price {
+  background: none;
+  padding-top: 18px;
+}
+.b-modal__fastview .b-goods_price-skid {
+  float: none;
+  margin-left: 167px;
+}
+.b-modal__fastview .b-goods__price {
+  margin-left: 0px;
+  margin-right: 10px;
+}
+.b-modal__fastview .b-catalog_head {
+  margin-left: 30px;
+}
+.b-modal__fastview .b-fastview_slider {
+  width: 678px;
+  margin: 0px auto 30px auto;
+}
+.b-modal__fastview .b-fastview_slider-prev {
+  display: block;
+  position: absolute;
+  top: 303px;
+  left: -20px;
+  width: 41px;
+  height: 93px;
+  cursor: pointer;
+  background: url(../images/bslider-control_left.png) no-repeat 0px 0px;
+}
+.b-modal__fastview .b-fastview_slider-next {
+  display: block;
+  position: absolute;
+  top: 303px;
+  right: -20px;
+  width: 41px;
+  height: 93px;
+  cursor: pointer;
+  background: url(../images/bslider-control_right.png) no-repeat 0px 0px;
+}
+.b-modal__fastview .b-fastview_slider-next A,
+.b-modal__fastview .b-fastview_slider-prev A {
+  display: block;
+  width: 41px;
+  height: 93px;
+}
+
+.b-modal__fastview .b-goods_list__item {
+  width: 200px!important;
+}
+
 /* Модалка быстрого просмотра - КОНЕЦ */
+
+
 
 /* Модалка выбора брендов - НАЧАЛО */
 .b-modal.b-modal__selbrand {
@@ -1140,8 +1229,18 @@ A.b-sort__act {
 .b-selected_brands-inner {
   border-radius: 4px;
   margin: -6px 25px 20px 0px;
-  min-height: 354px;
+  height: 345px;
+  padding: 9px 0px 9px 0px;
+  overflow: auto;
   box-shadow: inset 0px 1px 5px 0px #BEBEBE;
+}
+.b-selected_brands-inner A {
+  display: block;
+  padding: 0px 0px 0px 15px;
+  margin: 0px 0px 0px 11px;
+  font: 12px/20px arial;
+  color: #333333;
+  background: url(../images/close_gray.png) no-repeat 0px 5px;
 }
 .b-checkbox_brands-head {
   font: 18px/47px myriad_procondensed, arial;
@@ -1180,7 +1279,7 @@ A.b-sort__act {
 .b-checkbox_brands .b-cat_left_col__check_list .b-cat_left_col__check_row LABEL {
   margin-left: 10px;
 }
-.b-modal_footer {
+.b-modal__selbrand .b-modal_footer {
   background: #EFEFEF;
   height: 45px;
   overflow: hidden;

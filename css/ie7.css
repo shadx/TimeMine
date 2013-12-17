@@ -1,0 +1,35 @@
+.b-header__login {
+  width: 220px;
+}
+.b-search FORM {
+  background-position: 0px 0px;
+  position: relative;
+}
+.b-search .b-search INPUT[type="text"] {
+  margin-top: 0px;
+  float: left;
+}
+.b-goods_price-skid_red {
+  width: 110px;
+}
+.b-order_but {
+  position: relative;
+  z-index: 1;
+  height: 60px;
+  width: 120px;
+  float: inherit !important;
+  border: none;
+  overflow: hidden;
+}
+.b-order_but INPUT {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  dislay: block;
+  height: 46px;
+  border: solid 1px #EB7500 !important;
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+}

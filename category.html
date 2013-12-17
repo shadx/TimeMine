@@ -5,19 +5,25 @@
   <title></title>
   
   <link href="css/default.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="css/jquery.rating.css" rel="stylesheet" type="text/css" media="screen" />
   <link href="css/jqueryui.custom.css" rel="stylesheet" type="text/css" media="screen" />
   <link href="css/main.css" rel="stylesheet" type="text/css" media="screen" />
   <link href="css/shadx.css" rel="stylesheet" type="text/css" media="screen" />
+  <!--[if IE 7]>
+    <link href="css/ie7.css" rel="stylesheet" type="text/css" media="screen" />
+  <![endif]-->
   
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+  <script type="text/javascript" src="js/jquery.rating.js"></script>
   <script type="text/javascript" src="js/jqueryui.custom.js"></script>
   <script type="text/javascript" src="js/init.js"></script>
+  
 </head>
 <body>
   
   <div class="b-modal_wp">
-    <div class="b-modal b-modal__selbrand">
+    <div class="b-modal b-modal__selbrand" style="display: none;">
       <div class="b-modal_head">
         Выбор
         <div class="modal_close" onclick="$(this).parents('.b-modal_wp').hide();"></div>
@@ -56,8 +62,8 @@
           <div class="b-selected_brands-head">Выбраные</div>
           <div class="b-selected_brands-inner">
             <a href="#">2 Men</a>
-            <a href="#">Adidas</a>
-            <a href="#">Baon</a>
+            <a href="#">Barrio Santo</a>
+            <a href="#">Bench</a>
           </div>
         </div>
         
@@ -65,268 +71,270 @@
           <div class="b-checkbox_brands-head">
             <div class="b-search">
               <form action="#" method="post">
-                <input type="text" name="#" placeholder="" />
-                <input type="submit" value="&nbsp;" />
+                <div>
+                  <input type="submit" value="&nbsp;" />
+                  <input type="text" name="#" placeholder="" />
+                </div>
               </form>
             </div>
             Поиск по названию 
           </div>
           <div class="b-cat_left_col__check_list">
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_1" />
-              <label for="cvet_check_1">2 Men</label>
+              <input type="checkbox" name="#" id="cvet_check_1-1" />
+              <label for="cvet_check_1-1">2 Men</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_2" />
-              <label for="cvet_check_2">7 for all mankind</label>
+              <input type="checkbox" name="#" id="cvet_check_1-2" />
+              <label for="cvet_check_1-2">7 for all mankind</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_3" />
-              <label for="cvet_check_3">Adidas</label>
+              <input type="checkbox" name="#" id="cvet_check_1-3" />
+              <label for="cvet_check_1-3">Adidas</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_4" />
-              <label for="cvet_check_4">Adidas SLVR</label>
+              <input type="checkbox" name="#" id="cvet_check_1-4" />
+              <label for="cvet_check_1-4">Adidas SLVR</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_5" />
-              <label for="cvet_check_5">Affliction</label>
+              <input type="checkbox" name="#" id="cvet_check_1-5" />
+              <label for="cvet_check_1-5">Affliction</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_6" />
-              <label for="cvet_check_6">Alpha Industries</label>
+              <input type="checkbox" name="#" id="cvet_check_1-6" />
+              <label for="cvet_check_1-6">Alpha Industries</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_7" />
-              <label for="cvet_check_7">Antony morato</label>
+              <input type="checkbox" name="#" id="cvet_check_1-7" />
+              <label for="cvet_check_1-7">Antony morato</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_8" />
-              <label for="cvet_check_8">Armata di Mare</label>
+              <input type="checkbox" name="#" id="cvet_check_1-8" />
+              <label for="cvet_check_1-8">Armata di Mare</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_9" />
-              <label for="cvet_check_9">Asics</label>
+              <input type="checkbox" name="#" id="cvet_check_1-9" />
+              <label for="cvet_check_1-9">Asics</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_10" />
-              <label for="cvet_check_10">Baon</label>
+              <input type="checkbox" name="#" id="cvet_check_1-10" />
+              <label for="cvet_check_1-10">Baon</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_11" />
-              <label for="cvet_check_11">Barrio Santo</label>
+              <input type="checkbox" name="#" id="cvet_check_1-11" />
+              <label for="cvet_check_1-11">Barrio Santo</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_12" />
-              <label for="cvet_check_12">Bench</label>
+              <input type="checkbox" name="#" id="cvet_check_1-12" />
+              <label for="cvet_check_1-12">Bench</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_13" />
-              <label for="cvet_check_13">Ben Sherman</label>
+              <input type="checkbox" name="#" id="cvet_check_1-13" />
+              <label for="cvet_check_1-13">Ben Sherman</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_14" />
-              <label for="cvet_check_14">Berghaus</label>
+              <input type="checkbox" name="#" id="cvet_check_1-14" />
+              <label for="cvet_check_1-14">Berghaus</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_15" />
-              <label for="cvet_check_15">Best Mountain</label>
+              <input type="checkbox" name="#" id="cvet_check_1-15" />
+              <label for="cvet_check_1-15">Best Mountain</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_16" />
-              <label for="cvet_check_16">Bikkembergs</label>
+              <input type="checkbox" name="#" id="cvet_check_1-16" />
+              <label for="cvet_check_1-16">Bikkembergs</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_16" />
-              <label for="cvet_check_16">BLACKSPADE</label>
+              <input type="checkbox" name="#" id="cvet_check_1-17" />
+              <label for="cvet_check_1-17">BLACKSPADE</label>
             </div>
           </div>
           <div class="b-cat_left_col__check_list">
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_1" />
-              <label for="cvet_check_1">2 Men</label>
+              <input type="checkbox" name="#" id="cvet_check_2-1" />
+              <label for="cvet_check_2-1">2 Men</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_2" />
-              <label for="cvet_check_2">7 for all mankind</label>
+              <input type="checkbox" name="#" id="cvet_check_2-2" />
+              <label for="cvet_check_2-2">7 for all mankind</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_3" />
-              <label for="cvet_check_3">Adidas</label>
+              <input type="checkbox" name="#" id="cvet_check_2-3" />
+              <label for="cvet_check_2-3">Adidas</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_4" />
-              <label for="cvet_check_4">Adidas SLVR</label>
+              <input type="checkbox" name="#" id="cvet_check_2-4" />
+              <label for="cvet_check_2-4">Adidas SLVR</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_5" />
-              <label for="cvet_check_5">Affliction</label>
+              <input type="checkbox" name="#" id="cvet_check_2-5" />
+              <label for="cvet_check_2-5">Affliction</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_6" />
-              <label for="cvet_check_6">Alpha Industries</label>
+              <input type="checkbox" name="#" id="cvet_check_2-6" />
+              <label for="cvet_check_2-6">Alpha Industries</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_7" />
-              <label for="cvet_check_7">Antony morato</label>
+              <input type="checkbox" name="#" id="cvet_check_2-7" />
+              <label for="cvet_check_2-7">Antony morato</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_8" />
-              <label for="cvet_check_8">Armata di Mare</label>
+              <input type="checkbox" name="#" id="cvet_check_2-8" />
+              <label for="cvet_check_2-8">Armata di Mare</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_9" />
-              <label for="cvet_check_9">Asics</label>
+              <input type="checkbox" name="#" id="cvet_check_2-9" />
+              <label for="cvet_check_2-9">Asics</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_10" />
-              <label for="cvet_check_10">Baon</label>
+              <input type="checkbox" name="#" id="cvet_check_2-10" />
+              <label for="cvet_check_2-10">Baon</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_11" />
-              <label for="cvet_check_11">Barrio Santo</label>
+              <input type="checkbox" name="#" id="cvet_check_2-11" />
+              <label for="cvet_check_2-11">Barrio Santo</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_12" />
-              <label for="cvet_check_12">Bench</label>
+              <input type="checkbox" name="#" id="cvet_check_2-12" />
+              <label for="cvet_check_2-12">Bench</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_13" />
-              <label for="cvet_check_13">Ben Sherman</label>
+              <input type="checkbox" name="#" id="cvet_check_2-13" />
+              <label for="cvet_check_2-13">Ben Sherman</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_14" />
-              <label for="cvet_check_14">Berghaus</label>
+              <input type="checkbox" name="#" id="cvet_check_2-14" />
+              <label for="cvet_check_2-14">Berghaus</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_15" />
-              <label for="cvet_check_15">Best Mountain</label>
+              <input type="checkbox" name="#" id="cvet_check_2-15" />
+              <label for="cvet_check_2-15">Best Mountain</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_16" />
-              <label for="cvet_check_16">Bikkembergs</label>
+              <input type="checkbox" name="#" id="cvet_check_2-16" />
+              <label for="cvet_check_2-16">Bikkembergs</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_16" />
-              <label for="cvet_check_16">BLACKSPADE</label>
+              <input type="checkbox" name="#" id="cvet_check_2-17" />
+              <label for="cvet_check_2-17">BLACKSPADE</label>
             </div>
           </div>
           <div class="b-cat_left_col__check_list last">
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_1" />
-              <label for="cvet_check_1">2 Men</label>
+              <input type="checkbox" name="#" id="cvet_check_3-1" />
+              <label for="cvet_check_3-1">2 Men</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_2" />
-              <label for="cvet_check_2">7 for all mankind</label>
+              <input type="checkbox" name="#" id="cvet_check_3-2" />
+              <label for="cvet_check_3-2">7 for all mankind</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_3" />
-              <label for="cvet_check_3">Adidas</label>
+              <input type="checkbox" name="#" id="cvet_check_3-3" />
+              <label for="cvet_check_3-3">Adidas</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_4" />
-              <label for="cvet_check_4">Adidas SLVR</label>
+              <input type="checkbox" name="#" id="cvet_check_3-4" />
+              <label for="cvet_check_3-4">Adidas SLVR</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_5" />
-              <label for="cvet_check_5">Affliction</label>
+              <input type="checkbox" name="#" id="cvet_check_3-5" />
+              <label for="cvet_check_3-5">Affliction</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_6" />
-              <label for="cvet_check_6">Alpha Industries</label>
+              <input type="checkbox" name="#" id="cvet_check_3-6" />
+              <label for="cvet_check_3-6">Alpha Industries</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_7" />
-              <label for="cvet_check_7">Antony morato</label>
+              <input type="checkbox" name="#" id="cvet_check_3-7" />
+              <label for="cvet_check_3-7">Antony morato</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_8" />
-              <label for="cvet_check_8">Armata di Mare</label>
+              <input type="checkbox" name="#" id="cvet_check_3-8" />
+              <label for="cvet_check_3-8">Armata di Mare</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_9" />
-              <label for="cvet_check_9">Asics</label>
+              <input type="checkbox" name="#" id="cvet_check_3-9" />
+              <label for="cvet_check_3-9">Asics</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_10" />
-              <label for="cvet_check_10">Baon</label>
+              <input type="checkbox" name="#" id="cvet_check_3-10" />
+              <label for="cvet_check_3-10">Baon</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_11" />
-              <label for="cvet_check_11">Barrio Santo</label>
+              <input type="checkbox" name="#" id="cvet_check_3-11" />
+              <label for="cvet_check_3-11">Barrio Santo</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_12" />
-              <label for="cvet_check_12">Bench</label>
+              <input type="checkbox" name="#" id="cvet_check_3-12" />
+              <label for="cvet_check_3-12">Bench</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_13" />
-              <label for="cvet_check_13">Ben Sherman</label>
+              <input type="checkbox" name="#" id="cvet_check_3-13" />
+              <label for="cvet_check_3-13">Ben Sherman</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_14" />
-              <label for="cvet_check_14">Berghaus</label>
+              <input type="checkbox" name="#" id="cvet_check_3-14" />
+              <label for="cvet_check_3-14">Berghaus</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_15" />
-              <label for="cvet_check_15">Best Mountain</label>
+              <input type="checkbox" name="#" id="cvet_check_3-15" />
+              <label for="cvet_check_3-15">Best Mountain</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_16" />
-              <label for="cvet_check_16">Bikkembergs</label>
+              <input type="checkbox" name="#" id="cvet_check_3-16" />
+              <label for="cvet_check_3-16">Bikkembergs</label>
             </div>
             
             <div class="b-cat_left_col__check_row">
-              <input type="checkbox" name="#" id="cvet_check_16" />
-              <label for="cvet_check_16">BLACKSPADE</label>
+              <input type="checkbox" name="#" id="cvet_check_3-17" />
+              <label for="cvet_check_3-17">BLACKSPADE</label>
             </div>
           </div>
         </div>
@@ -347,6 +355,154 @@
             <a href="#">>></a>
           </div>
         </div>
+      </div>
+    </div>
+    
+    
+    <div class="b-modal b-modal__fastview" style="display: block;">
+      <span id="fastview_slider_next" class="b-fastview_slider-next"></span>
+      <span id="fastview_slider_prev" class="b-fastview_slider-prev"></span>
+      <div class="modal_close" onclick="$(this).parents('.b-modal_wp').hide();"></div>
+      <div class="b-modal_inner">
+        <div class="b-goods">
+          <div class="b-goods__left_col">
+            <img id="goods__big_foto" src="tmp/goods_bfoto-b3.jpg" alt="" />
+          </div>
+          
+          <div class="b-goods__right_col">
+            <div class="b-goods__brand">
+              <a href="#"><img src="tmp/goods_brand.jpg" alt="" /></a>
+            </div>
+            
+            <div class="b-goods__name">
+              Пуховик Timberland
+            </div>
+            
+            <div class="b-goods__rating">
+              <input name="gst_1" value="1" type="radio" class="star" />
+              <input name="gst_1" value="2" type="radio" class="star" />
+              <input name="gst_1" value="3" type="radio" class="star" />
+              <input name="gst_1" value="4" type="radio" class="star" checked="checked" />
+              <input name="gst_1" value="5" type="radio" class="star" />
+            </div>
+            
+            <div class="b-goods__har_price">
+              <div class="b-goods__price">
+                <div class="b-goods__price__row1">
+                  <div class="b-goods__price_val">
+                    <span>Цена:</span> 21 490
+                  </div>
+                  
+                  <div class="b-goods_price-skid">
+                    <div class="b-goods_price-skid_red">
+                      <div class="b-goods_price-skid_red1"></div>
+                      <div class="b-goods_price-skid_red3"></div>
+                      <div class="b-goods_price-skid_red2">Скидка 20%</div>
+                    </div>
+                    <div class="b-goods_price-skid_gray">
+                      23 380 руб.
+                    </div>
+                  </div>
+                </div>
+                <div class="b-order_but">
+                  <!-- <a href="#">КУПИТЬ!</a> -->
+                  <input type="submit" value="КУПИТЬ!" />
+                </div>
+                <a href="#" class="add2favorit">Добавить в избранное</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="clear"></div>
+          
+          <div class="b-catalog_head">
+            <strong>Мужская одежда</strong> - Лидеры продаж
+          </div>
+          <div class="b-fastview_slider">
+            <div class="b-goods_list">
+              <div class="b-goods_list__item">
+                <div class="b-goods_list__skidka">35%</div>
+                
+                <div class="b-goods_list__foto"><a href="#"><img src="tmp/goods_sfoto-1.jpg" alt="" /></a></div>
+                <div class="b-goods_list__name"><a href="#">Timberland</a></div>
+                <div class="b-goods_list__desc">Пуховик Timberland</div>
+                <div class="b-goods_list__price b-goods_list__price__with_old">
+                  <span>23 490 руб.</span>
+                  <strong>21 490 руб.</strong>
+                </div>
+              </div>
+              
+              <div class="b-goods_list__item">
+                <div class="b-goods_list__foto"><a href="#"><img src="tmp/goods_sfoto-2.jpg" alt="" /></a></div>
+                <div class="b-goods_list__name"><a href="#">Timberland</a></div>
+                <div class="b-goods_list__desc">Пуховик Timberland</div>
+                <div class="b-goods_list__price">
+                  <strong>21 490 руб.</strong>
+                </div>
+              </div>
+              
+              <div class="b-goods_list__item">
+                <div class="b-goods_list__foto"><a href="#"><img src="tmp/goods_sfoto-1.jpg" alt="" /></a></div>
+                <div class="b-goods_list__name"><a href="#">Timberland</a></div>
+                <div class="b-goods_list__desc">Пуховик Timberland</div>
+                <div class="b-goods_list__price">
+                  <strong>21 490 руб.</strong>
+                </div>
+              </div>
+              
+              <div class="b-goods_list__item">
+                <div class="b-goods_list__foto"><a href="#"><img src="tmp/goods_sfoto-1.jpg" alt="" /></a></div>
+                <div class="b-goods_list__name"><a href="#">Timberland</a></div>
+                <div class="b-goods_list__desc">Пуховик Timberland</div>
+                <div class="b-goods_list__price">
+                  <strong>21 490 руб.</strong>
+                </div>
+              </div>
+              
+              <div class="b-goods_list__item">
+                <div class="b-goods_list__skidka">35%</div>
+                
+                <div class="b-goods_list__foto"><a href="#"><img src="tmp/goods_sfoto-1.jpg" alt="" /></a></div>
+                <div class="b-goods_list__name"><a href="#">Timberland</a></div>
+                <div class="b-goods_list__desc">Пуховик Timberland</div>
+                <div class="b-goods_list__price b-goods_list__price__with_old">
+                  <span>23 490 руб.</span>
+                  <strong>21 490 руб.</strong>
+                </div>
+              </div>
+              
+              <div class="b-goods_list__item">
+                <div class="b-goods_list__foto"><a href="#"><img src="tmp/goods_sfoto-2.jpg" alt="" /></a></div>
+                <div class="b-goods_list__name"><a href="#">Timberland</a></div>
+                <div class="b-goods_list__desc">Пуховик Timberland</div>
+                <div class="b-goods_list__price">
+                  <strong>21 490 руб.</strong>
+                </div>
+              </div>
+              
+              <div class="b-goods_list__item">
+                <div class="b-goods_list__foto"><a href="#"><img src="tmp/goods_sfoto-1.jpg" alt="" /></a></div>
+                <div class="b-goods_list__name"><a href="#">Timberland</a></div>
+                <div class="b-goods_list__desc">Пуховик Timberland</div>
+                <div class="b-goods_list__price">
+                  <strong>21 490 руб.</strong>
+                </div>
+              </div>
+              
+              <div class="b-goods_list__item">
+                <div class="b-goods_list__foto"><a href="#"><img src="tmp/goods_sfoto-1.jpg" alt="" /></a></div>
+                <div class="b-goods_list__name"><a href="#">Timberland</a></div>
+                <div class="b-goods_list__desc">Пуховик Timberland</div>
+                <div class="b-goods_list__price">
+                  <strong>21 490 руб.</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="b-modal_footer">
+        
       </div>
     </div>
   </div>
@@ -376,8 +532,10 @@
       
       <div class="b-search">
         <form action="#" method="post">
-          <input type="text" name="#" placeholder="Например, сапоги Basconi" />
-          <input type="submit" value="&nbsp;" />
+          <div>
+            <input type="submit" value="&nbsp;" />
+            <input type="text" name="#" placeholder="Например, сапоги Basconi" />
+          </div>
         </form>
       </div>
     </div>
@@ -529,7 +687,7 @@
             <div class="b-color_range">
               <div id="slider-range"></div>
               <p>
-                <input type="text" id="amount" value="" readonly />&ndash;<input type="text" id="amount2" value="" readonly /> руб.
+                <input type="text" id="amount" value="" readonly="readonly" />&ndash;<input type="text" id="amount2" value="" readonly="readonly" /> руб.
               </p>
               <div class="b-button b-button__blue">
                 <input type="button" value="ОК" />

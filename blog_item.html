@@ -4,13 +4,16 @@
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   <title></title>
   
-  <script type="text/javascript" src="js/jquery.js"></script>
-  <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
-  <script type="text/javascript" src="js/init.js"></script>
-  
   <link href="css/default.css" rel="stylesheet" type="text/css" media="screen" />
   <link href="css/main.css" rel="stylesheet" type="text/css" media="screen" />
   <link href="css/shadx.css" rel="stylesheet" type="text/css" media="screen" />
+  <!--[if IE 7]>
+    <link href="css/ie7.css" rel="stylesheet" type="text/css" media="screen" />
+  <![endif]-->
+  
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+  <script type="text/javascript" src="js/init.js"></script>
 </head>
 <body>
 	<div class="b-wrapper">
@@ -38,8 +41,10 @@
       
       <div class="b-search">
         <form action="#" method="post">
-          <input type="text" name="#" placeholder="Например, сапоги Basconi" />
-          <input type="submit" value="&nbsp;" />
+          <div>
+            <input type="submit" value="&nbsp;" />
+            <input type="text" name="#" placeholder="Например, сапоги Basconi" />
+          </div>
         </form>
       </div>
     </div>

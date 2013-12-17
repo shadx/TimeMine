@@ -8,11 +8,15 @@
   <link href="css/jquery.rating.css" rel="stylesheet" type="text/css" media="screen" />
   <link href="css/main.css" rel="stylesheet" type="text/css" media="screen" />
   <link href="css/shadx.css" rel="stylesheet" type="text/css" media="screen" />
+  <!--[if IE 7]>
+    <link href="css/ie7.css" rel="stylesheet" type="text/css" media="screen" />
+  <![endif]-->
   
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/jquery.rating.js"></script>
   <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
   <script type="text/javascript" src="js/init.js"></script>
+  
 </head>
 <body>
 	<div class="b-wrapper">
@@ -40,8 +44,10 @@
       
       <div class="b-search">
         <form action="#" method="post">
-          <input type="text" name="#" placeholder="Например, сапоги Basconi" />
-          <input type="submit" value="&nbsp;" />
+          <div>
+            <input type="submit" value="&nbsp;" />
+            <input type="text" name="#" placeholder="Например, сапоги Basconi" />
+          </div>
         </form>
       </div>
     </div>
@@ -220,11 +226,11 @@
           </div>
           
           <div class="b-goods__rating">
-            <input name="gst_1" value=1 type="radio" class="star" />
-            <input name="gst_1" value=2 type="radio" class="star" />
-            <input name="gst_1" value=3 type="radio" class="star" />
-            <input name="gst_1" value=4 type="radio" class="star" checked="checked" />
-            <input name="gst_1" value=5 type="radio" class="star" />
+            <input name="gst_1" value="1" type="radio" class="star" />
+            <input name="gst_1" value="2" type="radio" class="star" />
+            <input name="gst_1" value="3" type="radio" class="star" />
+            <input name="gst_1" value="4" type="radio" class="star" checked="checked" />
+            <input name="gst_1" value="5" type="radio" class="star" />
           </div>
           
           <div class="b-goods__har_price">
@@ -271,7 +277,6 @@
               </div>
               
               <div class="b-order_but">
-                <!-- <a href="#">КУПИТЬ!</a> -->
                 <input type="submit" value="КУПИТЬ!" />
               </div>
             </div>
