@@ -1209,7 +1209,7 @@ A.b-sort__act {
 
 /* Модалка выбора брендов - НАЧАЛО */
 .b-modal.b-modal__selbrand {
-  margin-top: 255px;
+  margin-top: 140px;
   width: 730px;
 }
 .b-modal.b-modal__selbrand .b-top_menu__brands {

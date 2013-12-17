@@ -55,20 +55,13 @@ $(document).ready(function(){
     $('BODY, HTML').css('overflow','auto');
   });
   
-  $(function () {
-    var $modal = $('.b-modal');
-    $('.b-modal__selbrand-link, .b-modal__fastview-link').click(function(e) {
-      var yourClick = true;
-      $(document).bind('click.myEvent', function (e) {
-        if (!yourClick && $(e.target).closest('.b-modal').length == 0) {
-          $('.b-modal_wp').hide();
-          $('.b-modal').hide();
-          $(document).unbind('click.myEvent');
-        }
-        yourClick = false;
-      });
-      e.preventDefault();
-    });
+  $('.b-modal_wp').click (function(e){
+    if($(e.target).closest('.b-modal').length == 0) {
+      $('.b-modal_wp').hide();
+      $('.b-modal').hide();
+      $('BODY, HTML').css('overflow','auto');
+    }
+    e.preventDefault();
   });
   
   $('.b-modal__selbrand-link').click (function(){
