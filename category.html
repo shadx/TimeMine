@@ -22,11 +22,11 @@
 </head>
 <body>
   
-  <div class="b-modal_wp">
+  <div class="b-modal_wp" style="display: none;">
     <div class="b-modal b-modal__selbrand" style="display: none;">
       <div class="b-modal_head">
         Выбор
-        <div class="modal_close" onclick="$(this).parents('.b-modal_wp').hide();"></div>
+        <div class="modal_close"></div>
       </div>
       
       <div class="b-modal_inner">
@@ -359,10 +359,10 @@
     </div>
     
     
-    <div class="b-modal b-modal__fastview" style="display: block;">
+    <div class="b-modal b-modal__fastview" style="display: none;">
       <span id="fastview_slider_next" class="b-fastview_slider-next"></span>
       <span id="fastview_slider_prev" class="b-fastview_slider-prev"></span>
-      <div class="modal_close" onclick="$(this).parents('.b-modal_wp').hide();"></div>
+      <div class="modal_close"></div>
       <div class="b-modal_inner">
         <div class="b-goods">
           <div class="b-goods__left_col">
@@ -772,7 +772,7 @@
               <a href="#">Barrio Santo</a>
               <a href="#">Bench</a>
               
-              <a class="b-cat_left_col__params__link" href="#">Выберите бренды</a>
+              <a class="b-cat_left_col__params__link b-modal__selbrand-link" href="#">Выберите бренды</a>
             </div>
           </div>
           
@@ -1039,7 +1039,7 @@
             <div class="b-goods_list__kupon"></div>
             
             <div class="b-goods_list__foto">
-              <div class="b-goods_list__quick_view"><a href="#">Быстрый просмотр</a></div>
+              <div class="b-goods_list__quick_view b-modal__fastview-link"><a href="#">Быстрый просмотр</a></div>
               
               <a href="#"><img src="tmp/goods_sfoto-1.jpg" alt="" /></a>
             </div>

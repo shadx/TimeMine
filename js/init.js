@@ -49,6 +49,38 @@ $(document).ready(function(){
   $("#amount").val($("#slider-range").slider("values", 0));
   $("#amount2").val($("#slider-range").slider("values", 1));
   
+  $('.modal_close').click (function(){
+    $('.b-modal_wp').hide();
+    $('.b-modal').hide();
+    $('BODY, HTML').css('overflow','auto');
+  });
+  
+  $(function () {
+    var $modal = $('.b-modal');
+    $('.b-modal__selbrand-link, .b-modal__fastview-link').click(function(e) {
+      var yourClick = true;
+      $(document).bind('click.myEvent', function (e) {
+        if (!yourClick && $(e.target).closest('.b-modal').length == 0) {
+          $('.b-modal_wp').hide();
+          $('.b-modal').hide();
+          $(document).unbind('click.myEvent');
+        }
+        yourClick = false;
+      });
+      e.preventDefault();
+    });
+  });
+  
+  $('.b-modal__selbrand-link').click (function(){
+    $('BODY, HTML').css('overflow','hidden');
+    $('.b-modal_wp').show();
+    $('.b-modal__selbrand').show();
+  });
+  $('.b-modal__fastview-link').click (function() {
+    $('BODY, HTML').css('overflow','hidden');
+    $('.b-modal_wp').show();
+    $('.b-modal__fastview').show();
+  });
 });
 
 
